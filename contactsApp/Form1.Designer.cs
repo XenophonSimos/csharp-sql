@@ -40,8 +40,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.searchbutton = new System.Windows.Forms.Button();
             this.searchName = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.nameDetails = new System.Windows.Forms.TextBox();
+            this.checkedBox = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -172,18 +174,6 @@
             this.searchName.Size = new System.Drawing.Size(276, 20);
             this.searchName.TabIndex = 3;
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 246);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(90, 20);
-            this.tableLayoutPanel2.TabIndex = 5;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -195,11 +185,45 @@
             this.label5.Text = "search for name";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 246);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(90, 20);
+            this.tableLayoutPanel2.TabIndex = 5;
+            // 
+            // nameDetails
+            // 
+            this.nameDetails.Location = new System.Drawing.Point(403, 246);
+            this.nameDetails.Name = "nameDetails";
+            this.nameDetails.ReadOnly = true;
+            this.nameDetails.Size = new System.Drawing.Size(323, 20);
+            this.nameDetails.TabIndex = 6;
+            this.nameDetails.Text = "name details";
+            // 
+            // checkedBox
+            // 
+            this.checkedBox.AutoSize = true;
+            this.checkedBox.Location = new System.Drawing.Point(12, 321);
+            this.checkedBox.Name = "checkedBox";
+            this.checkedBox.Size = new System.Drawing.Size(136, 17);
+            this.checkedBox.TabIndex = 7;
+            this.checkedBox.Text = "name details in text box";
+            this.checkedBox.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkedBox);
+            this.Controls.Add(this.nameDetails);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.searchName);
             this.Controls.Add(this.searchbutton);
@@ -231,8 +255,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button searchbutton;
         private System.Windows.Forms.TextBox searchName;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TextBox nameDetails;
+        private System.Windows.Forms.CheckBox checkedBox;
     }
 }
 

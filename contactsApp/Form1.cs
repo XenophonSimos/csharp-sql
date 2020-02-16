@@ -49,12 +49,20 @@ namespace contactsApp
             {
                 while (dataReader.Read())
                 {
+                    output = "";
                     output = output + dataReader.GetValue(0)
                         + " - " + dataReader.GetValue(1)
                         + " - " + dataReader.GetValue(2)
                         + " - " + dataReader.GetValue(3);
 
-                    MessageBox.Show(output);
+                    if(checkedBox.Checked)
+                    {
+                        nameDetails.Text = output.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show(output);
+                    }
                 }
             } else
             {
